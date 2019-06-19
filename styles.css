@@ -1,0 +1,142 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Segoe UI WestEuropean', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    margin: 0px;
+}
+
+
+/* Styling NotesApp -------------------------------------------------------------------------------- */
+
+.note-container {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border-radius: 3px;
+    border: 1px solid #EFEFEF;
+    padding: 5px 15px 5px 5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    background-color: lightyellow;
+    min-width: 250px;
+    max-width: 800px;
+    min-height: 150px;
+    resize: both;
+    overflow: auto;
+}
+
+.note-header-container {
+    padding: 5px;
+    /* background-color: lightgreen; */
+    margin: -5px -15px 5px -5px;
+    height: 30px;
+}
+
+.note-header-container .note-header {
+    float: left;
+    font-weight: bold;
+}
+
+.note-header-container .note-buttons {
+    float: right;
+    margin-top: -7px;
+}
+
+.note-buttons .note-button {
+    height: 35px;
+    margin-right: 5px;
+}
+
+.note-yellow {
+    background-color: lightyellow;
+}
+
+.note-red {
+    background-color: lightcoral;
+}
+
+.note-blue {
+    background-color: lightblue;
+}
+
+.note-green {
+    background-color: lightgreen;
+}
+
+.note-white {
+    background-color: white;
+}
+
+.note-header-container .note-buttons span:not(:last-child) {
+    /* icon fix: note buttons spacing */
+    padding-right: 20px;
+}
+
+.note-header-container .note-header span {
+    /* icon fix: title icon spacing */
+    padding-right: 5px;
+}
+
+.note-container .note-content {
+    clear: both
+}
+
+.avatar-container {
+    margin: 10px;
+}
+
+
+/* RTEditor */
+
+.RichTextEditor__root___2QXK- {
+    border: 0px !important;
+    border-radius: 0px !important;
+    background-color: inherit !important;
+}
+
+.main-rte-editor {
+    font-family: 'Segoe UI WestEuropean', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+    background-color: lightyellow;
+}
+
+.main-rte-editor .public-DraftEditor-content {
+    /* overwrite padding, done in widget it self */
+    padding: 0px !important;
+}
+
+.main-rte-editor-multiline-view-mode {
+    font-family: 'Segoe UI WestEuropean', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 14px !important;
+}
+
+.main-rte-toolbar {
+    /* overwrite padding and margin for the RTE editor, done in widget */
+    padding: 5px 0px !important;
+    margin: 5px 0px !important;
+    background-color: lightyellow;
+}
+
+.main-rte-toolbar-view-mode {
+    /* hide toolbar in multiline textfield editing in view mode */
+    display: none;
+    padding: 0px !important;
+    margin: 0px !important
+}
+
+.editor-edit-button {
+    position: relative;
+    float: right;
+    top: -38px;
+}
